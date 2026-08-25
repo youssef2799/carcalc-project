@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: rgb(255, 236, 196);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 130px 20px 40px 20px; 
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px; 
+    background-color: #ffffff;
+    background-image: url('logo.jpg');
+    background-size: auto 65px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: solid;
+    color: #222;
+    font-size: 1.8rem;
+}
+
+form {
+    background-color: white;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0;
+    padding: 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+form h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.list {
+    text-decoration-color: rgb(255, 196, 234);
+}
+
+.list label {
+    font-weight: bold;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.list input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #fafafa;
+}
+
+.list input[type="submit"] {
+    background-color: #3d5a49;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+    margin-top: 15px;
+    padding: 12px;
+}
+
+.list input[type="submit"]:hover {
+    background-color: #2e4437;
+}
+
+.content {
+    background-color: #3d5a49;
+    color: white;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.instdet {
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.expecinst {
+    background-color: #b08d57;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.Precentage, .totalpr {
+    font-size: 1rem;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
